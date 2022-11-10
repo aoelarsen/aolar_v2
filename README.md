@@ -1,4 +1,5 @@
 # AOElar.no - Anders Øksendal Larsen
-## Frontend Mechanic and Bike Developer...
 
-Doing some Astro stuff
+__Frontend Mechanic 🧑‍💻, Bike Developer 🚲 and general problem solver 😎__
+
+Doing some Astro stuff 
