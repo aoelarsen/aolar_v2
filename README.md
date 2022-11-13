@@ -1,4 +1,4 @@
-# AOElar.no - Anders Øksendal Larsen
+# AOLar.no - Anders Øksendal Larsen
 
 __Frontend Mechanic 🧑‍💻, Bike Developer 🚲 and general problem solver 😎__
 
