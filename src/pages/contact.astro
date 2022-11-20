@@ -9,7 +9,13 @@ import Layout from '../layouts/Layout.astro';
             You can find me on instagram or twitter. Though I'm not that active on either platform.
             To reach me, it's easier to just drop me a message here
         </p>
-        <form class='grid gap-2 px-3 py-4 md:px-4' data-netlify='true' id='contact-form'>
+        <form
+            class='grid gap-2 px-3 py-4 md:px-4'
+            data-netlify='true'
+            netlify-honeypot='bot-field'
+            method='POST'
+            id='contact-form'
+        >
             <formfield class='py-2 flex flex-wrap gap-2'>
                 <label class='flex flex-col w-full'>
                     Name
