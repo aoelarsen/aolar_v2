@@ -5,12 +5,12 @@ const currentPath = pathname.slice(1);
 
 <nav class='bg-secondary text-primary dark:bg-primary dark:text-secondary justify-self-end'>
     <div class='mx-auto max-w-7xl px-2 sm:px-6 lg:px-8'>
-        <div class='relative flex h-16 items-center justify-between'>
-            <div class='absolute inset-y-0 left-0 flex items-center sm:hidden'>
+        <div class='flex h-16 items-center justify-between'>
+            <div class='inset-y-0 left-0 flex items-center sm:hidden'>
                 <!-- Mobile menu button-->
                 <button
                     type='button'
-                    class='inline-flex items-center justify-center rounded-sm p-2 mr-4 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'
+                    class='inline-flex items-center justify-center rounded-sm p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white'
                     aria-controls='mobile-menu'
                     aria-expanded='false'
                     id='navButton'
@@ -128,11 +128,10 @@ const currentPath = pathname.slice(1);
     </div>
 
     <!-- Mobile menu, show/hide based on menu state. -->
-    <div
-        class='hidden absolute right-1 h-min w-[90vw] md:hidden bg-secondary dark:bg-primary'
-        id='mobileMenu'
-    >
-        <div class='flex flex-col gap-2 space-y-1 px-2 pt-2 pb-3'>
+    <div class='hidden relative h-min md:hidden' id='mobileMenu'>
+        <div
+            class='absolute right-[5vw] w-[80vw] h-min flex flex-col gap-2 bg-secondary dark:bg-primary space-y-1 px-2 pt-2 pb-3 border-green-800 rounded-sm'
+        >
             {
                 currentPath === '' ? (
                     <a
@@ -192,6 +191,7 @@ const currentPath = pathname.slice(1);
         </div>
     </div>
 </nav>
+
 <script is:inline>
     const openMenuIcon = document.getElementById('openMenuIcon');
     const closedMenuIcon = document.getElementById('closedMenuIcon');
