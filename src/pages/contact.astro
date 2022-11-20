@@ -4,10 +4,17 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title='Contact AOLar.no'>
     <main class='grid min-h-[50vh] place-content-center p-2 py-6 max-w-xl mx-auto'>
-        <h2 class='font-semibold text-center md:text-left py-4 md:text-4xl'>Say hi</h2>
-        <p class='px-3 py-4 md:px-4'>
-            You can find me on instagram or twitter. Though I'm not that active on either platform.
-            To reach me, it's easier to just drop me a message here
+        <div class='p-4 flex flex-wrap flex-col md:flex-row gap-4 py-2 md:py-4'>
+            <h2 class='self-baseline font-semibold text-center md:text-left text-xl md:text-4xl'>
+                You found me!
+            </h2>
+            <p class='self-baseline font-semibold text-center md:text-left md:text-2xl'>
+                It's ok to say hi
+            </p>
+        </div>
+        <p class='p-4'>
+            If you serch for my name, I'll probably show up in a few places on the internet. Though
+            the easies way to reach me is to just drop me a message here
         </p>
         <form
             class='grid gap-2 px-3 py-4 md:px-4'
@@ -50,9 +57,14 @@ import Layout from '../layouts/Layout.astro';
                 class='py-2 rounded-sm bg-green-700 text-secondary cursor-pointer hover:bg-green-900 md:w-1/2 md:justify-self-end'
             />
         </form>
-    </main>
+    </main><a href='https://github.com/aoelarsen' class='cursor-pointer'> </a><a
+        href='https://github.com/aoelarsen'
+        class='cursor-pointer'
+    >
+        <script is:inline>
+            document
+                .getElementById('contact-form')
+                .addEventListener('submit', (e) => e.preventDefault);
+        </script>
+    </a>
 </Layout>
-
-<script is:inline>
-    document.getElementById('contact-form').addEventListener('submit', (e) => e.preventDefault);
-</script>
